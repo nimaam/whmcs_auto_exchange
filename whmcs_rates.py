@@ -9,9 +9,9 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # Replace these variables with your database connection info and the product ID you're updating
 db_host = 'localhost'
 db_port = '3306'
-db_user = 'armanhost_wuhsmecrsdb'
-db_password = ']u%4G1~2JqPW'
-db_name = 'armanhost_wdhamtcasbase'
+db_user = 'WHMCS_DB_User'
+db_password = 'WHMCS_DB_Password'
+db_name = 'WHMCS_DB_Name'
 
 #Calculation
 TRY_IRT = USD_IRR / TRY_USD 
