@@ -38,7 +38,7 @@ data = {
 }
 
 # Make the POST request
-response = requests.post("https://armanhost.com/includes/api.php", data=data, verify=False)
+response = requests.post("https://whmcsdomain/includes/api.php", data=data, verify=False)
 
 # Check if the request was successful
 if response.status_code == 200:
