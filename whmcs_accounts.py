@@ -14,9 +14,9 @@ TRY_IRT = USD_IRR / TRY_USD
 # Replace these variables with your database connection info and the product ID you're updating
 db_host = 'localhost'
 db_port = '3306'
-db_user = 'armanhost_wuhsmecrsdb'
-db_password = ']u%4G1~2JqPW'
-db_name = 'armanhost_wdhamtcasbase'
+db_user = 'WHMCS_DB_User'
+db_password = 'WHMCS_DB_Password'
+db_name = 'WHMCS_DB_Name'
 
 
 #DB connection
@@ -28,13 +28,13 @@ connection = pymysql.connect(host=db_host,
 # Initialize the data for POST request
 data = {
     'action': 'GetProducts',
-    'identifier': 'sPzsDkph38rGQ5LrlGaWZVNeoDeNhtrI',
-    'secret': 'FtYLemzPtt0f75qZFCQLt2o4aUMdkKBv',
+    'identifier': 'WHMCS_API_Identifier',
+    'secret': 'WHMCS_API_Secret',
     'responsetype': 'json'
 }
 
 # Make the POST request
-response = requests.post("https://armanhost.com/includes/api.php", data=data, verify=False)
+response = requests.post("https://whmcsdomain/includes/api.php", data=data, verify=False)
 
 # Check if the request was successful
 if response.status_code == 200:
